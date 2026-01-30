@@ -1,0 +1,75 @@
+main{
+    margin: 20px;
+    font-size: var(--p2-size);
+    max-width: max-content
+}
+
+h1{
+     font-size: var(--h1-size);
+     text-align: center;
+}
+h3{
+    font-size: var(--h3-size);
+}
+li{
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: max-content;
+}
+
+.details{
+    padding-right: 10px;
+}
+#infoBook{
+    max-width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 0 0 0;
+}
+#infoBook div{
+    margin-top: 8px;
+}
+#coverBook img{
+    height: 14rem
+}
+#notation{
+    color: var(--cta-color);
+}
+
+#About{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    color:var(--cta-color);
+    background-color: #0000;
+    border: 1px solid var(--cta-color);
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: var(--interaction-light-color);
+    background-color: var(--interaction-dark-color);
+    color: #F1FAEE;
+    transition-duration: 0.2s;
+}
+
+#SimilarBooks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

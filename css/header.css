@@ -53,6 +53,11 @@
         #cart {
             width: 25px;
             height: 25px;
+            transition: transform .2s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
 
         #burger_container {

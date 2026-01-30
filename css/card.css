@@ -1,0 +1,64 @@
+#card_container{
+    border: 1px solid var(--interaction-dark-color);
+    width: fit-content;
+    transition: transform .2s ease;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    #cover{
+        width: 170px;
+        height: 235px;
+    }
+
+    #info_container{
+        padding: 5px;
+        display: flex;
+    flex-direction: column;
+
+        #rate_container{
+            display: flex;
+            align-items: center;
+
+            #star{
+                width: 16px;
+            }
+        }
+        button{
+                margin: 15px 0;
+                align-self: center;
+                color:var(--cta-color);
+                padding: 4px 8px;
+                border: 1px solid var(--cta-color);
+                border-radius: 2px;
+                margin-top: 10px;
+                background-color: var(--primary-color);
+                 transition-duration: 0.2s;
+                 cursor: pointer;
+
+                &:hover{
+                    border-color: var(--interaction-light-color);
+                    background-color: var(--interaction-dark-color);
+                    color: #F1FAEE;
+                }
+            }
+
+        #avalable_price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #avalable{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: var(--cta-color);
+            }
+
+            #price{
+                font-size: var(--p3-size);
+            }
+        }  
+    }
+    }
