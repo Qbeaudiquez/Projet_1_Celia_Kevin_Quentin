@@ -18,12 +18,4 @@
     h3{
         margin-left: 20px;
     }
-
-    #cards_container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-        gap: 10px;
-    }
 }

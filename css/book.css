@@ -66,10 +66,3 @@ button:hover{
     color: #F1FAEE;
     transition-duration: 0.2s;
 }
-
-#SimilarBooks{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
