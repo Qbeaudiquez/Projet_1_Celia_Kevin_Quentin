@@ -4,7 +4,6 @@
     #logo {
         display: none;
         font-size: var(--h1-size);
-        font-family: var(--title-font);
         width: 100%;
         text-align: center;
         text-shadow: 0 3px 3px rgba(37, 86, 64, 0.50)
@@ -97,11 +96,14 @@
     #header {
         #logo {
             display: block;
+            margin-bottom: 20px;
         }
 
         #nav_container {
             #favicon {
                 opacity: 0;
+                width: 25px;
+                height: 25px;
             }
 
             #navbar {
@@ -109,6 +111,7 @@
             }
 
             #cart_burger_container{
+                gap: 0;
                 #burger{
                     display: none;
                 }
