@@ -1,0 +1,24 @@
+:root{
+    /* Colors */
+    --primary-color:#F1FAEE;
+    --secondary-color:#343A40;
+    --cta-color:#37815F;
+    --interaction-light-color:#70C29D;
+    --interaction-dark-color:#255640;
+
+    /* Fonts */
+    --title-font:"Bree Serif", serif;
+    --paragraphe-font:"Ubuntu", sans-serif;
+
+    /* Fonts-size */
+    --h1-size:36px;
+    --h2-size:20px;
+    --h3-size:16px;
+
+    --button-size:12px;
+
+    --p1-size:28px;
+    --p2-size:16px;
+    --p3-size:10px;
+    
+}

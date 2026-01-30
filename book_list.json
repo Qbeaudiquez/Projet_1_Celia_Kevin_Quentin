@@ -1,0 +1,38 @@
+{
+"books": [
+	{"name": "Que la mort nous frôle",
+  "author": "Michel Bussi",
+  "notation": "4.3",
+  "price": "23"},
+
+  {"name": "Les Belles Promesses",
+  "author": "Pierre Lemaitre",
+  "notation": "4.6",
+  "price": "24,99"},
+
+  {"name": "Je vais te détruire",
+  "author": "Linwood Barclay",
+  "notation": "3.9",
+  "price": "21,99"},
+
+  {"name": "La Locataire",
+  "author": "Freuda McFadden",
+  "notation": "4.2",
+  "price": "24,99"},
+
+  {"name": "Pas de fumée sans feu",
+  "author": "M. J. Arlidge",
+  "notation": "4.2",
+  "price": "24,95"},
+
+  {"name": "L'autre moi",
+  "author": "Franck Thilliez",
+  "notation": "4.5",
+  "price": "22,95"},
+
+  {"name": "Secrets et mensonges",
+  "author": "M. C. Beaton",
+  "notation": "3.2",
+  "price": "21,85"}
+  ]
+}
