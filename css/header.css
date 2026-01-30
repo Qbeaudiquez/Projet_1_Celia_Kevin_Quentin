@@ -55,47 +55,119 @@
             height: 25px;
             transition: transform .2s ease;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
         }
 
         #burger_container {
             cursor: pointer;
-            height: 25px;
-        }
-
-        #burger {
+            height: 40px;
+            height: 30px;
+            display: flex;
+            align-items: center;
             position: relative;
 
-            &::before,
-            &::after {
-                position: absolute;
-            }
+        }
 
-            &::before,
-            &::after,
-            & {
+        /* LE BURGER - 3 barres */
+        #burger {
+            position: relative;
+            width: 40px;
+            height: 5px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            
+        }
+
+         /* Barre du haut */
+            #burger::before {
                 content: "";
+                position: absolute;
                 width: 40px;
                 height: 5px;
                 background-color: var(--secondary-color);
-                cursor: pointer;
                 border-radius: 10px;
+                top: -12px;
+                transition: all 0.3s ease-in-out;
             }
 
-            &::before {
-                bottom: -20px;
+            /* Barre du bas */
+            #burger::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 5px;
+                background-color: var(--secondary-color);
+                border-radius: 10px;
+                top: 12px;
+                transition: all 0.3s ease-in-out;
             }
+        
 
-            &::after {
-                bottom: -10px;
-            }
+        /*Transformation en croix*/
+        #burger_container.active #burger {
+            background-color: transparent; /* Cache la barre du milieu */
         }
+
+        #burger_container.active #burger::before{
+          top: 0;
+          transform:rotate(45deg);
+        }
+
+        #burger_container.active #burger::after{
+          top: 0;
+          transform: rotate(-45deg);
+        }     
 
     }
 
+    /*Contenu du menu mobile*/
+    #navbar_mobile{
+      position: fixed;
+      top: 60px;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: var(--cta-color);
+      z-index:999;
+      padding-top: 100px;
+      transition: right 0.3s ease-in-out;
+
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li{
+          margin: 0;
+
+          a{
+            margin-left: 20px;
+            font-size: var(--p1-size);
+            color: var(--primary-color);
+
+            &:hover{
+                color: var(--interaction-dark-color);
+            }
+          }
+        }
+      }
+              
+    } 
+    
+    /*Menu ouvert*/
+    #navbar_mobile.nav_open{
+      right: 0;
+    }  
+
 }
+
+
+
 
 @media (min-width:600px) {
     #header {
@@ -115,15 +187,17 @@
                 display: block;
             }
 
-            #cart_burger_container{
+            #cart_burger_container {
                 gap: 0;
-                #burger{
+
+                #burger {
                     display: none;
                 }
             }
 
         }
-        #navbar_mobile{
+
+        #navbar_mobile {
             display: none;
         }
     }
