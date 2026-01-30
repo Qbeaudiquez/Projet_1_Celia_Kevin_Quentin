@@ -107,6 +107,16 @@
             #navbar {
                 display: block;
             }
+
+            #cart_burger_container{
+                #burger{
+                    display: none;
+                }
+            }
+
+        }
+        #navbar_mobile{
+            display: none;
         }
     }
 }
